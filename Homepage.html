@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Rizal Historical Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="Stylesheet" href="Style.css">
+    <link rel="Icon" href="data:image/jpeg;base64,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" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <div class="seal">
+            <!-- <i class="fas fa-scroll"><link rel="stylesheet" href=""></i> -->
+             <img src="r.png" alt="Rizal" height="55px" width="55px">
+
+        </div>
+        <h1>Jose Rizal Historical Portal</h1>
+        <p>Chronicles of the Philippines' Illustrious National Hero</p>
+    </header>
+
+    <div class="container">
+        <nav id="mainNav">
+            <button class="active" data-section="biography"><i class="fas fa-book-open"></i> Biography</button>
+            <button data-section="timeline"><i class="fas fa-hourglass-half"></i> Timeline</button>
+            <button data-section="works"><i class="fas fa-pen-fancy"></i> Literary Works</button>
+            <button data-section="gallery"><i class="fas fa-portrait"></i> Gallery</button>
+            <button data-section="quotes"><i class="fas fa-quote-right"></i> Quotes</button>
+            <button data-section="legacy"><i class="fas fa-landmark"></i> Legacy</button>
+        </nav>
+        <div class="content-section active" id="biographySection">
+            <button class="like-btn" data-section="biography"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-book-open"></i> The Life of Jose Rizal</h2>
+            <hr class="section-divider">
+            
+            <div class="bio-section">
+                <div class="bio-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_veNKmFXlJsbHBKppIJ3EaKVyyhvwCXeSg-qz0SEFgxMpmkDX" alt="Jose Rizal Portrait">
+                </div>
+                <div class="bio-content">
+                    <p>José Protasio Rizal Mercado y Alonso Realonda (June 19, 1861 – December 30, 1896) was a Filipino nationalist, novelist, and key figure in the Philippine Revolution. He is considered the national hero of the Philippines.</p>
+                    
+                    <div class="historical-fact">
+                        <div class="fact-title">Remarkable Fact</div>
+                        <p>Rizal was a polymath who spoke 22 languages including Spanish, French, German, English, Italian, Japanese, Chinese, and various Philippine languages.</p>
+                    </div>
+                    
+                    <p>Born in Calamba, Laguna, Rizal was the seventh of eleven children of Francisco Rizal Mercado and Teodora Alonso Realonda. He attended the Ateneo Municipal de Manila and later studied medicine at the University of Santo Tomas in Manila. He continued his studies in Madrid, Spain, and traveled throughout Europe.</p>
+                    
+                    <p>Rizal's two most famous novels, <em>Noli Me Tangere</em> (1887) and <em>El Filibusterismo</em> (1891), exposed the abuses of the Spanish colonial government and the Catholic Church in the Philippines. These works inspired the Philippine Revolution against Spanish rule.</p>
+                    
+                    <p>After returning to the Philippines in 1892, Rizal founded the civic organization La Liga Filipina. He was soon exiled to Dapitan in Mindanao, where he practiced medicine, established a school, and engaged in various scientific and civic projects.</p>
+                    
+                    <p>In 1896, Rizal was arrested, tried for sedition, and executed by firing squad in Manila at age 35. His martyrdom made him a symbol of the fight for Philippine independence.</p>
+                </div>
+            </div>
+            
+            <h3 style="margin-top: 40px;">Family Background</h3>
+            <hr class="section-divider">
+            
+            <p>Rizal came from a wealthy and educated family. His father, Francisco Mercado, was a prosperous farmer who rented land from the Dominican order. His mother, Teodora Alonso, was highly educated and taught Rizal to read and write at an early age.</p>
+            
+            <div class="historical-fact">
+                <div class="fact-title">Family Name Change</div>
+                <p>The family name "Rizal" was adopted in 1849 when Governor-General Narciso Clavería ordered all Filipino families to choose new surnames from a list. The name "Rizal" was derived from the Spanish word "ricial," meaning "green field."</p>
+            </div>
+            
+            <h3>Education</h3>
+            <hr class="section-divider">
+            
+            <p>Rizal's educational journey was remarkable:</p>
+            <ul>
+                <li>Early education under his mother and private tutors</li>
+                <li>Ateneo Municipal de Manila (1872-1877) - earned Bachelor of Arts degree</li>
+                <li>University of Santo Tomas (1877-1882) - studied philosophy and medicine</li>
+                <li>Universidad Central de Madrid (1882-1885) - earned licentiate in medicine and philosophy</li>
+                <li>Studied ophthalmology in Paris and Heidelberg</li>
+            </ul>
+        </div>
+
+        <div class="content-section" id="timelineSection">
+            <button class="like-btn" data-section="timeline"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-hourglass-half"></i> Rizal's Life Timeline</h2>
+            <hr class="section-divider">
+            
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 19, 1861</div>
+                        <p>José Rizal is born in Calamba, Laguna to Francisco Mercado and Teodora Alonso.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1872</div>
+                        <p>Begins studies at Ateneo Municipal de Manila where he excels in academics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1877</div>
+                        <p>Enrolls at the University of Santo Tomas to study philosophy and medicine.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1882</div>
+                        <p>Travels to Spain to continue medical studies at Universidad Central de Madrid.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1887</div>
+                        <p>Publishes <em>Noli Me Tangere</em> in Berlin, a novel criticizing Spanish colonial rule.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1891</div>
+                        <p>Publishes sequel <em>El Filibusterismo</em> in Ghent, Belgium.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1892</div>
+                        <p>Returns to the Philippines and founds La Liga Filipina. Arrested and exiled to Dapitan.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1896</div>
+                        <p>Arrested en route to Cuba, tried for sedition, and executed in Manila on December 30.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">1912</div>
+                        <p>Declared national hero of the Philippines by the American colonial government.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-section" id="worksSection">
+            <button class="like-btn" data-section="works"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-pen-fancy"></i> Rizal's Literary Works</h2>
+            <hr class="section-divider">
+            
+            <p>Rizal was a prolific writer whose works inspired the Philippine revolution. His writings covered novels, poetry, essays, and scientific treatises.</p>
+            
+            <h3>Major Novels</h3>
+            <div class="books-container">
+                <div class="book-card" data-book="noli">
+                    <div class="book-cover" style="background-color: #5D4037;">
+                        Noli Me Tangere
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Noli Me Tangere</div>
+                        <div class="book-year">1887</div>
+                        <p>Exposes the abuses of Spanish friars and colonial government in the Philippines.</p>
+                    </div>
+                </div>
+                <div class="book-card" data-book="fili">
+                    <div class="book-cover" style="background-color: #4E342E;">
+                        El Filibusterismo
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">El Filibusterismo</div>
+                        <div class="book-year">1891</div>
+                        <p>Sequel to Noli, explores revolution as a means to achieve reform.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Other Significant Works</h3>
+            <div class="books-container">
+                <div class="book-card" data-book="ultimo">
+                    <div class="book-cover" style="background-color: #3E2723;">
+                        Mi Último Adiós
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">Mi Último Adiós</div>
+                        <div class="book-year">1896</div>
+                        <p>Final poem written before execution, hidden in an oil lamp.</p>
+                    </div>
+                </div>
+                <div class="book-card" data-book="indolence">
+                    <div class="book-cover" style="background-color: #5D4037;">
+                        The Indolence of the Filipinos
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">The Indolence of the Filipinos</div>
+                        <div class="book-year">1890</div>
+                        <p>Essay defending Filipinos against charges of laziness.</p>
+                    </div>
+                </div>
+                <div class="book-card" data-book="malolos">
+                    <div class="book-cover" style="background-color: #4E342E;">
+                        To the Young Women of Malolos
+                    </div>
+                    <div class="book-info">
+                        <div class="book-title">To the Young Women of Malolos</div>
+                        <div class="book-year">1889</div>
+                        <p>Letter advocating women's education and empowerment.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Poetry Collections</h3>
+            <ul>
+                <li><strong>To the Philippine Youth</strong> (1879) - Prize-winning poem encouraging Filipino youth</li>
+                <li><strong>They Asked Me for Verses</strong> (1882) - Poem about the poet's dilemma</li>
+                <li><strong>Hymn to Labor</strong> (1888) - Celebrates the dignity of labor</li>
+            </ul>
+        </div>
+
+        <!-- Book Modals -->
+        <div class="book-modal" id="noliModal">
+            <div class="book-content">
+                <div class="book-cover-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Noli_Me_Tangere_1887_cover.jpg/800px-Noli_Me_Tangere_1887_cover.jpg');">
+                    <h2>Noli Me Tangere</h2>
+                </div>
+                <div class="book-details">
+                    <button class="close-modal"><i class="fas fa-times"></i></button>
+                    <h2>Noli Me Tangere (1887)</h2>
+                    <p><strong>Original Title:</strong> Noli Me Tángere (Latin for "Touch Me Not")</p>
+                    <p><strong>Language:</strong> Spanish</p>
+                    <p><strong>Genre:</strong> Novel, Satire, Political fiction</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>The novel tells the story of Juan Crisóstomo Ibarra, a young Filipino who returns to the Philippines after seven years of study in Europe. Through Ibarra's experiences, Rizal exposes the abuses of the Spanish colonial government and the Catholic Church in the Philippines.</p>
+                    <p>The novel's characters represent various sectors of Philippine society under Spanish rule, from the abusive friars to the oppressed natives. The title "Noli Me Tangere" alludes to a biblical phrase that Rizal uses to symbolize the cancer of colonial oppression that afflicts the country.</p>
+                    <h3>Key Themes</h3>
+                    <ul>
+                        <li>Colonial abuse and corruption</li>
+                        <li>Social injustice</li>
+                        <li>Nationalism and reform</li>
+                        <li>Religion and hypocrisy</li>
+                        <li>Education as liberation</li>
+                    </ul>
+                    <h3>Historical Impact</h3>
+                    <p>The novel played a crucial role in awakening Filipino nationalism and inspiring the Philippine Revolution against Spanish colonial rule. It was banned in the Philippines, and possession of a copy could lead to imprisonment or exile.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-modal" id="filiModal">
+            <div class="book-content">
+                <div class="book-cover-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/El_filibusterismo_cover_1891.jpg/800px-El_filibusterismo_cover_1891.jpg');">
+                    <h2>El Filibusterismo</h2>
+                </div>
+                <div class="book-details">
+                    <button class="close-modal"><i class="fas fa-times"></i></button>
+                    <h2>El Filibusterismo (1891)</h2>
+                    <p><strong>Original Title:</strong> El Filibusterismo (The Reign of Greed)</p>
+                    <p><strong>Language:</strong> Spanish</p>
+                    <p><strong>Genre:</strong> Novel, Political fiction</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>This sequel to Noli Me Tangere follows the return of Simoun (the transformed Ibarra) to the Philippines as a wealthy jeweler. Disillusioned by the failure of his reformist efforts, Simoun now seeks violent revolution to overthrow the Spanish regime.</p>
+                    <p>The novel presents a darker, more radical perspective than its predecessor, exploring the consequences when peaceful reform fails. The title refers to "filibustero" - a term used by Spanish authorities to describe revolutionaries.</p>
+                    <h3>Key Themes</h3>
+                    <ul>
+                        <li>Revolution vs. reform</li>
+                        <li>Colonial oppression</li>
+                        <li>Corruption in the colonial system</li>
+                        <li>The failure of assimilation</li>
+                        <li>The role of violence in social change</li>
+                    </ul>
+                    <h3>Historical Impact</h3>
+                    <p>While less popular than Noli Me Tangere, El Filibusterismo had a profound impact on revolutionary thinkers. It presents a more radical vision of change that would influence later revolutionary movements.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-modal" id="ultimoModal">
+            <div class="book-content">
+                <div class="book-cover-image" style="background-color: #3E2723; color: var(--gold);">
+                    <h2>Mi Último Adiós</h2>
+                </div>
+                <div class="book-details">
+                    <button class="close-modal"><i class="fas fa-times"></i></button>
+                    <h2>Mi Último Adiós (1896)</h2>
+                    <p><strong>English Title:</strong> My Last Farewell</p>
+                    <p><strong>Language:</strong> Spanish</p>
+                    <p><strong>Genre:</strong> Poem</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>This 14-verse poem was written by Rizal on the eve of his execution. It expresses his love for his country and his willingness to die for it. The poem was hidden in an alcohol lamp and given to his family after his death.</p>
+                    <p>The poem does not explicitly mention the Philippines, but its references to the "Pearl of the Orient Seas" and other imagery clearly point to his homeland. It combines themes of patriotism, sacrifice, and hope for the future.</p>
+                    <h3>Key Themes</h3>
+                    <ul>
+                        <li>Patriotism and love of country</li>
+                        <li>Sacrifice for a greater cause</li>
+                        <li>Hope for the nation's future</li>
+                        <li>Death and immortality</li>
+                        <li>The beauty of the Philippines</li>
+                    </ul>
+                    <h3>Historical Impact</h3>
+                    <p>The poem became a rallying cry for Filipino revolutionaries and remains one of the most famous literary works in Philippine history. It is memorized by schoolchildren and recited at patriotic events.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-modal" id="indolenceModal">
+            <div class="book-content">
+                <div class="book-cover-image" style="background-color: #5D4037; color: var(--gold);">
+                    <h2>The Indolence of the Filipinos</h2>
+                </div>
+                <div class="book-details">
+                    <button class="close-modal"><i class="fas fa-times"></i></button>
+                    <h2>The Indolence of the Filipinos (1890)</h2>
+                    <p><strong>Original Title:</strong> Sobre la indolencia de los filipinos</p>
+                    <p><strong>Language:</strong> Spanish</p>
+                    <p><strong>Genre:</strong> Essay</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>This essay was written as a response to Spanish accusations that Filipinos were inherently lazy. Rizal argues that what Spaniards perceive as indolence is actually a rational response to colonial oppression and the destruction of traditional economic systems.</p>
+                    <p>Rizal examines historical and social factors that have contributed to the economic stagnation of the Philippines under Spanish rule, including: the destruction of native trade and industry, forced labor, lack of education, and the discouragement of enterprise.</p>
+                    <h3>Key Themes</h3>
+                    <ul>
+                        <li>Colonial economic policies</li>
+                        <li>Cultural stereotypes</li>
+                        <li>Effects of oppression</li>
+                        <li>Historical analysis of Philippine society</li>
+                        <li>Economic development</li>
+                    </ul>
+                    <h3>Historical Impact</h3>
+                    <p>The essay was an important contribution to the Propaganda Movement's efforts to reform Spanish colonial policy. It remains relevant in discussions about colonial mentality and economic development.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-modal" id="malolosModal">
+            <div class="book-content">
+                <div class="book-cover-image" style="background-color: #4E342E; color: var(--gold);">
+                    <h2>To the Young Women of Malolos</h2>
+                </div>
+                <div class="book-details">
+                    <button class="close-modal"><i class="fas fa-times"></i></button>
+                    <h2>To the Young Women of Malolos (1889)</h2>
+                    <p><strong>Original Title:</strong> Sa Mga Kababayang Dalaga sa Malolos</p>
+                    <p><strong>Language:</strong> Spanish (later translated to Tagalog)</p>
+                    <p><strong>Genre:</strong> Letter/Essay</p>
+                    <hr>
+                    <h3>Synopsis</h3>
+                    <p>This famous letter was written in response to a group of young women in Malolos, Bulacan who petitioned to establish a night school to study Spanish. Despite opposition from the local friar, they succeeded in their petition.</p>
+                    <p>Rizal praises their courage and uses the occasion to discuss the role of women in nation-building. He emphasizes the importance of education for women, rational thinking, and the need to reject blind obedience to religious authority.</p>
+                    <h3>Key Themes</h3>
+                    <ul>
+                        <li>Women's education</li>
+                        <li>Rational thinking</li>
+                        <li>Religious hypocrisy</li>
+                        <li>Women's role in society</li>
+                        <li>Courage and initiative</li>
+                    </ul>
+                    <h3>Historical Impact</h3>
+                    <p>The letter became an important feminist text in Philippine history and inspired generations of Filipino women to pursue education and assert their rights. It remains a key text in Philippine women's studies.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="gallerySection">
+            <button class="like-btn" data-section="gallery"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-portrait"></i> Rizal Gallery</h2>
+            <hr class="section-divider">
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_veNKmFXlJsbHBKppIJ3EaKVyyhvwCXeSg-qz0SEFgxMpmkDX" alt="Jose Rizal Portrait">
+                    <div class="gallery-caption">Official Portrait</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://static.wixstatic.com/media/b1613b_2204dc04490a471287810560e905cdf6.jpg/v1/fill/w_350,h_263,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/b1613b_2204dc04490a471287810560e905cdf6.jpg" alt="Rizal Family">
+                    <div class="gallery-caption">Rizal's Family</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://image.jimcdn.com/app/cms/image/transf/dimension=1024x2048:format=jpg/path/s84792e3f32671126/image/i8e235e92e5889db0/version/1616034464/image.jpg" alt="Rizal in Japan">
+                    <div class="gallery-caption">Rizal in Japan (1888)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVvrpF5C3XH3dLz3tynX-L87jeqGWM9NL7nA&s" alt="Rizal in Barcelona">
+                    <div class="gallery-caption">Rizal in Barcelona (1880s)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.ytimg.com/vi/v2XWfm4p-uY/maxresdefault.jpg" alt="Rizal in Hong Kong">
+                    <div class="gallery-caption">Rizal in Hong Kong (1891)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxIffCqJe4uliAC6y31JQrhPcnLCuC9DCt9vtRSWw6gk5j1FmvEdagFmxRcsKDKCWEg0g&usqp=CAU" alt="Rizal in Dapitan">
+                    <div class="gallery-caption">Rizal in Dapitan Exile</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYobCko5QP326jP0u__JguK2FZS6-HTXK14g&s" alt="Rizal Execution">
+                    <div class="gallery-caption">Rizal's Execution (1896)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/jpeg;base64,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" alt="Rizal Monument">
+                    <div class="gallery-caption">Rizal Monument in Luneta</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="quotesSection">
+            <button class="like-btn" data-section="quotes"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-quote-right"></i> Memorable Quotes</h2>
+            <hr class="section-divider">
+            
+            <div class="quote-container">
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "The youth is the hope of our future."
+                    </div>
+                    <div class="quote-source">- To the Philippine Youth</div>
+                </div>
+                
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "He who does not know how to look back at where he came from will never get to his destination."
+                    </div>
+                    <div class="quote-source">- Noli Me Tangere</div>
+                </div>
+                
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "I do not write for this generation. I am writing for other ages. If this could read me, they would burn my books, the work of my whole life. On the other hand, the generation which interprets these writings will be an educated generation; they will understand me and say: 'Not all were asleep in the nighttime of our grandparents.'"
+                    </div>
+                    <div class="quote-source">- Letter to Ferdinand Blumentritt</div>
+                </div>
+                
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "There can be no tyrants where there are no slaves."
+                    </div>
+                    <div class="quote-source">- El Filibusterismo</div>
+                </div>
+                
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "One only dies once, and if one does not die well, a good opportunity is lost and will not present itself again."
+                    </div>
+                    <div class="quote-source">- Letter to his family before execution</div>
+                </div>
+                
+                <div class="quote-card">
+                    <div class="quote-text">
+                        "I wish to show those who deny us patriotism that we know how to die for our duty and our convictions."
+                    </div>
+                    <div class="quote-source">- Letter to Mariano Ponce</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="legacySection">
+            <button class="like-btn" data-section="legacy"><i class="far fa-heart"></i></button>
+            <span class="like-count">0</span>
+            
+            <h2><i class="fas fa-landmark"></i> Rizal's Legacy</h2>
+            <hr class="section-divider">
+            
+            <h3>National Hero Status</h3>
+            <p>Rizal was officially declared the Philippines' national hero by the American colonial government in 1912. His peaceful approach to reform through education and writing made him an acceptable symbol for both American and Filipino leaders.</p>
+            
+            <div class="historical-fact">
+                <div class="fact-title">Rizal Day</div>
+                <p>December 30, the anniversary of Rizal's execution, is celebrated as Rizal Day, a national holiday in the Philippines.</p>
+            </div>
+            
+            <h3>Monuments and Memorials</h3>
+            <ul>
+                <li><strong>Rizal Monument</strong> in Luneta Park, Manila - Contains his remains and is guarded 24/7</li>
+                <li><strong>Rizal Shrine</strong> in Calamba, Laguna - Replica of Rizal's ancestral home</li>
+                <li><strong>Rizal Park</strong> in Dapitan - Preserves his exile residence and works</li>
+                <li>Numerous statues, streets, and schools named after Rizal throughout the Philippines</li>
+            </ul>
+            
+            <h3>Cultural Impact</h3>
+            <p>Rizal's life and works continue to influence Philippine culture and politics:</p>
+            <ul>
+                <li>His novels are required reading in Philippine schools</li>
+                <li>His ideals of education, nationalism, and peaceful reform remain influential</li>
+                <li>He is celebrated in literature, film, theater, and visual arts</li>
+            </ul>
+            
+            <h3>International Recognition</h3>
+            <p>Rizal is honored worldwide:</p>
+            <ul>
+                <li>Monuments in Madrid, Spain; Wilhelmsfeld, Germany; Jinjiang, China; and other locations</li>
+                <li>Featured in the UNESCO Memory of the World Register for his manuscripts</li>
+                <li>Recognized as a significant figure in the global fight against colonialism</li>
+            </ul>
+            
+            <div class="historical-fact">
+                <div class="fact-title">Rizal's Scientific Contributions</div>
+                <p>Beyond literature, Rizal made contributions to science as an ophthalmologist, linguist, ethnologist, and naturalist. He discovered several species of animals and plants in Dapitan.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;Historical Website</p>
+        <p>"The glory of saving a country is not for him who has contributed to its ruin." - Jose Rizal</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation functionality
+            const navButtons = document.querySelectorAll('nav button[data-section]');
+            
+            navButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const sectionId = this.getAttribute('data-section') + 'Section';
+                    
+                    document.querySelectorAll('.content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    
+                    document.getElementById(sectionId).classList.add('active');
+                    
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Scroll to top of section
+                    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            // Book modal functionality
+            const bookCards = document.querySelectorAll('.book-card');
+            const bookModals = document.querySelectorAll('.book-modal');
+            const closeModalButtons = document.querySelectorAll('.close-modal');
+            
+            bookCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const bookId = this.getAttribute('data-book') + 'Modal';
+                    document.getElementById(bookId).classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+            
+            closeModalButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.book-modal').classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                });
+            });
+            
+            bookModals.forEach(modal => {
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        this.classList.remove('active');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            
+                // Load from localStorage
+                const savedLiked = localStorage.getItem(`liked_${button.getAttribute('data-section')}`);
+                const savedCount = localStorage.getItem(`likeCount_${button.getAttribute('data-section')}`);
+                
+                if (savedLiked === 'true') {
+                    liked = true;
+                    likeCount = parseInt(savedCount) || 1;
+                    button.innerHTML = '<i class="fas fa-heart"></i>';
+                    button.classList.add('liked');
+                    countElement.textContent = likeCount;
+                }
+            });
+            
+            // Back to top button
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('visible');
+                } else {
+                    backToTopBtn.classList.remove('visible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+    </script>
+
+</body>
+</html>
